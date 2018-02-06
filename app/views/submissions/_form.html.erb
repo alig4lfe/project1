@@ -1,0 +1,245 @@
+<%= form_with(model: submission, local: true) do |form| %>
+  <% if submission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
+
+      <ul>
+      <% submission.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :First_Name %>
+    <%= form.text_field :First_Name, id: :submission_First_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Last_Name %>
+    <%= form.text_field :Last_Name, id: :submission_Last_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Email %>
+    <%= form.text_field :Email, id: :submission_Email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Phone_Number %>
+    <%= form.text_field :Phone_Number, id: :submission_Phone_Number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Event_Date %>
+    <%= form.date_select :Event_Date, id: :submission_Event_Date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Event_Time %>
+    <%= form.time_select :Event_Time, id: :submission_Event_Time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Event_Name %>
+    <%= form.text_field :Event_Name, id: :submission_Event_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Event_Description %>
+    <%= form.text_area :Event_Description, id: :submission_Event_Description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pick_Up_Date %>
+    <%= form.date_select :Pick_Up_Date, id: :submission_Pick_Up_Date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Drop_Off_Date %>
+    <%= form.date_select :Drop_Off_Date, id: :submission_Drop_Off_Date %>
+  </div>
+
+  <div class="field">
+    <img src = 'https://lh6.googleusercontent.com/XC7ulC9w-6wbtxtZUTTn1InEIxapbXQIFxxT9MrGIQbjRSopJ4uyftZCuc81sz_rLSb_W58Lo7Q67lhoP_Cs9C-JwxdXFrWiF_KuGRGo-H9lOOrVzHnADdoZEzy-YqokCH6xD1C-vbUbgjM'style="width:128px;height:128px;">
+    <%= form.label :Popcorn_Machine %>
+    <%= form.check_box :Popcorn_Machine, id: :submitted_request_Popcorn_Machine %>
+  </div>
+
+  <div class="field">
+    <img src = 'https://lh5.googleusercontent.com/Dr-T9denSiFhNAh0jDbvdU_rjoDGGjX0SVJPzBUQq0DfA8ZaddKAIT95_zE4sKyypZmVG6VozZnFFMxSNHbW9qS4erFnAYB3GXV3j9z0L18Ya_FFHMkqhaC0Qb0X5xvht_a6f-pSQMbZP4w'style="width:128px;height:128px;">
+    <%= form.label :SnowKone_Machine %>
+    <%= form.check_box :SnowKone_Machine, id: :submitted_request_SnowKone_Machine %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/5iXB6UYG4E5oxjpV58VajKE8HjnuUQu8y2ad3wuaXDyGOkUIF1GDMI_ATBIMM0vn_u2HT0VzMMCIDs9AYIm_sf0As-pR9taRIRiOHqEnhqemlDjizMgd29x8qVBx5kMBlGeXHJ8GYymuRIg'style="width:128px;height:128px;">
+    <%= form.label :Chocolate_Fountain %>
+    <%= form.check_box :Chocolate_Fountain, id: :submitted_request_Chocolate_Fountain %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/ow7PRms9x97LgYTIXbth2jmMy4FkM6izj3Ok624HH8SUVTc_S78xnr31Vl8L9yHpLnaBD28FWwJH0zuIpINY3B8Wwjd27hwlgcfHeQcyNJgh_AsybUoOaWI9G33Gf4hv1dPxw8CM96mUtRo'style="width:128px;height:128px;">
+    <%= form.label :Cotton_Candy_Machine %>
+    <%= form.check_box :Cotton_Candy_Machine, id: :submitted_request_Cotton_Candy_Machine %>
+  </div>
+
+  <div class="field">
+    <img src = 'https://lh5.googleusercontent.com/Y73cfSGJSY_n4NNWmD2LwQ7ZHUz_4Fa7L3Z91w6ednYS0XC3oqx98hif7LBcNf5siHeHZCdP9n6eQUZ44ky2eve-GIptSUL_uQCrxhDqUIgK4ru2ssYpNUlTeENeLvgwawj7_YSAW72VLTc'style="width:128px;height:128px;">
+    <%= form.label :Margaritaville %>
+    <%= form.check_box :Margaritaville, id: :submitted_request_Margaritaville %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pancake_Griddle_A %>
+    <%= form.check_box :Pancake_Griddle_A, id: :submitted_request_Pancake_Griddle_A %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pancake_Griddle_B %>
+    <%= form.check_box :Pancake_Griddle_B, id: :submitted_request_Pancake_Griddle_B %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pancake_Griddle_C %>
+    <%= form.check_box :Pancake_Griddle_C, id: :submitted_request_Pancake_Griddle_C %>
+  </div>
+
+  <div class="field">
+    <img src = 'https://lh5.googleusercontent.com/Mu28RdEm_2Xs1eYPcc-153DK3EJtALZ7MR05TqPVoV-aieX2DjVUpvn8HjjOyYBaU5w2xQwlW5emqgoP1ab73o6aoYx-vDmjDmykIFCRgi2mL5rUcWPWs91tOl_ux21yCYnOdopmTlHJkZ0'style="width:128px;height:128px;">
+    <%= form.label :Epson_Projector %>
+    <%= form.check_box :Epson_Projector, id: :submitted_request_Epson_Projector %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/hgiIM2GU5m7P6paY0qIfTKfoxp40bcWSmp2Uj51HWngaIEeW9u1NsEW-HUY7yT0eJl2qkF-xcuiw7Z26x5OfQDGv96zdnT8AR4IU8f9hJ4AUFlKfMfxu2BGbfEoCr9N46PdXudDYiAMQdW4'style="width:128px;height:128px;">
+    <%= form.label :Projector_Screen %>
+    <%= form.check_box :Projector_Screen, id: :submitted_request_Projector_Screen %>
+  </div>
+
+  <div class="field">
+    <img src ='https://lh5.googleusercontent.com/xNT0GhI7d5rRFTfHBkX07BR2XmQxJtedz0IxGnZD1WdiBAyNb8q29MgrJW8QoZeRXYGISbXJIWZdMrkalgF-7TUi9HHn7YVa0TfFfiu7zmAQi9wtRkhA8_OO4UOpafYO6z8rsAEqpAAN-A8'style="width:128px;height:128px;">
+    <%= form.label :Fender_Speakers_Blutooth %>
+    <%= form.check_box :Fender_Speakers_Blutooth, id: :submitted_request_Fender_Speakers_Blutooth %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh3.googleusercontent.com/fIfsdbQyAQxDbR-nxtS5auwuJV1gbmAxh-CaSzvYo5vB0AuMaMl_Ci-R6gZ3kBJSpldUkZCyRYGv8h1sQjQA5rmzGR9z84U-OPAsIQK6yiDuAzsIG0nukesQtrZcq2WFog2ACTiVbT744UA'style="width:128px;height:128px;">
+    <%= form.label :Fender_Speakers_Wired %>
+    <%= form.check_box :Fender_Speakers_Wired, id: :submitted_request_Fender_Speakers_Wired %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/565uVbfJP7kA22vlgYV5Lu9jnSLmNC1RqVTeAw3vOWwSVHw9BaHbngujriDT1fmSFjeu6OiCPmFFwIOU0Cq7miyg8e2kAQoKf7KcZz0r1B1Ebm-vPgk_RYMLjjBUxMOFXzHWNnXsUe6xL-M'style="width:128px;height:128px;">
+    <%= form.label :microphone_and_Stand %>
+    <%= form.check_box :microphone_and_Stand, id: :submitted_request_microphone_and_Stand %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh3.googleusercontent.com/tPFQRystQkbrrKW19bwafg9BL0MREDuoIu8enuum4f9ocG6opbExpFyEB9lKzXUnd81MjCgjPVicJefTkZxdxNxvaBFN18Elf24skmVftvVLhnQSU_6TA84u1jsPjXcdYeo8znUz_0rdbLw'style="width:128px;height:128px;">
+    <%= form.label :Cornhole %>
+    <%= form.check_box :Cornhole, id: :submitted_request_Cornhole %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/N9TWGOCdMozb8GieLMu7clXF7zPQdz_h5Irabl58_HDnEyHEukK5yyy5fbjGG423ZAT9B5Z9UGtdv6fKFx24KQVT2AZ_uBQWLtzwkRf_xHL49L4x34N2L2GSqL54y7zeF7Nexf_EA1hM9uA'style="width:128px;height:128px;">
+    <%= form.label :Kan_Jam %>
+    <%= form.check_box :Kan_Jam, id: :submitted_request_Kan_Jam %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/Ci4akM1auj-fLOZ_oRmqkylWmXCDDFpdLGc9DI7qHL20cMdTh9yHVHMRvU5aiQUhFQpRZJveYEo4cxeMOZ-rOVSRkTBbaxBo_P3xeogN1GobYksLWtFb6IuQN5n0W9ypUkYbGlvZifWEJ18'style="width:128px;height:128px;">
+    <%= form.label :Bocce_Ball %>
+    <%= form.check_box :Bocce_Ball, id: :submitted_request_Bocce_Ball %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh4.googleusercontent.com/uevQSt-JiCL-ZCXdqQAwpUbS916M847VvI_E8Id7mEweAjQE4LfrqPYuIFm4vyTUEnK_IWdVcQqBGHlvqzQvcYaEbAabOZiczDVa2YB0MTXnBAHJ1C566TqLvHnlzd_VODh-gkLn4KOvaX0'style="width:128px;height:128px;">
+    <%= form.label :Washer_Toss %>
+    <%= form.check_box :Washer_Toss, id: :submitted_request_Washer_Toss %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/eua4AGHibJBkx0KzRb_jax-oyQMvc1SwnKStsffNHJzm4ovLTbAfewgNmXhZ3WRWwThvb6xKiFqV7fP3EYsWtKelz6c4_AxTmdhl06qCoqVYOQ1AI5ksJuMU4BssfjSALtSzKTHE2q4zL_M'style="width:128px;height:128px;">
+    <%= form.label :White_Canopy_A %>
+    <%= form.check_box :White_Canopy_A, id: :submitted_request_White_Canopy_A %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/eua4AGHibJBkx0KzRb_jax-oyQMvc1SwnKStsffNHJzm4ovLTbAfewgNmXhZ3WRWwThvb6xKiFqV7fP3EYsWtKelz6c4_AxTmdhl06qCoqVYOQ1AI5ksJuMU4BssfjSALtSzKTHE2q4zL_M'style="width:128px;height:128px;">
+    <%= form.label :White_Canopy_B %>
+    <%= form.check_box :White_Canopy_B, id: :submitted_request_White_Canopy_B %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/eua4AGHibJBkx0KzRb_jax-oyQMvc1SwnKStsffNHJzm4ovLTbAfewgNmXhZ3WRWwThvb6xKiFqV7fP3EYsWtKelz6c4_AxTmdhl06qCoqVYOQ1AI5ksJuMU4BssfjSALtSzKTHE2q4zL_M'style="width:128px;height:128px;">
+    <%= form.label :White_Canopy_C %>
+    <%= form.check_box :White_Canopy_C, id: :submitted_request_White_Canopy_C %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Strobe_Lights %>
+    <%= form.check_box :Strobe_Lights, id: :submitted_request_Strobe_Lights %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Red_Police_Light %>
+    <%= form.check_box :Red_Police_Light, id: :submitted_request_Red_Police_Light %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Six_Light_Helicopter %>
+    <%= form.check_box :Six_Light_Helicopter, id: :submitted_request_Six_Light_Helicopter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Black_Light %>
+    <%= form.check_box :Black_Light, id: :submitted_request_Black_Light %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/7bs2ptC5K4cwClWJKHHJttGM66LgZ9NVVQzHnOza11LGM0kSUf-scWrLrdpkg6C5RrkNE5Nvh4O63N8QP8qHVrE9tBqXxtNuPPLWUpEe6uK_m9Z2XU5eTPLF4mNfdipqcyhYCU3mNbV78DM'style="width:128px;height:128px;">
+    <%= form.label :Extention_Cord_A %>
+    <%= form.check_box :Extention_Cord_A, id: :submitted_request_Extention_Cord_A %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/7bs2ptC5K4cwClWJKHHJttGM66LgZ9NVVQzHnOza11LGM0kSUf-scWrLrdpkg6C5RrkNE5Nvh4O63N8QP8qHVrE9tBqXxtNuPPLWUpEe6uK_m9Z2XU5eTPLF4mNfdipqcyhYCU3mNbV78DM'style="width:128px;height:128px;">
+    <%= form.label :Extention_Cord_B %>
+    <%= form.check_box :Extention_Cord_B, id: :submitted_request_Extention_Cord_B %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/7bs2ptC5K4cwClWJKHHJttGM66LgZ9NVVQzHnOza11LGM0kSUf-scWrLrdpkg6C5RrkNE5Nvh4O63N8QP8qHVrE9tBqXxtNuPPLWUpEe6uK_m9Z2XU5eTPLF4mNfdipqcyhYCU3mNbV78DM'style="width:128px;height:128px;">
+    <%= form.label :Extention_cord_C %>
+    <%= form.check_box :Extention_cord_C, id: :submitted_request_Extention_cord_C %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh5.googleusercontent.com/Y73cfSGJSY_n4NNWmD2LwQ7ZHUz_4Fa7L3Z91w6ednYS0XC3oqx98hif7LBcNf5siHeHZCdP9n6eQUZ44ky2eve-GIptSUL_uQCrxhDqUIgK4ru2ssYpNUlTeENeLvgwawj7_YSAW72VLTc'style="width:128px;height:128px;">
+    <%= form.label :Water_Cooler_A %>
+    <%= form.check_box :Water_Cooler_A, id: :submitted_request_Water_Cooler_A %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/lInKVq95ToEg9XnZXYMrgABs-odEmBRgl2Q_bRHd_Ykxoiygs72yVgCn0Fq_c4ZJcheUPMercxLHR95WHKhwqHwcdxtv9f3Nm4bHa93bXumOYKc1JNkk4iQUfIrCfh3R9tvKsvOnDe5q4sw'style="width:128px;height:128px;">
+    <%= form.label :Water_Cooler_B %>
+    <%= form.check_box :Water_Cooler_B, id: :submitted_request_Water_Cooler_B %>
+  </div>
+
+  <div class="field">
+     <img src = 'https://lh6.googleusercontent.com/lInKVq95ToEg9XnZXYMrgABs-odEmBRgl2Q_bRHd_Ykxoiygs72yVgCn0Fq_c4ZJcheUPMercxLHR95WHKhwqHwcdxtv9f3Nm4bHa93bXumOYKc1JNkk4iQUfIrCfh3R9tvKsvOnDe5q4sw'style="width:128px;height:128px;">
+    <%= form.label :Water_Cooler_C %>
+    <%= form.check_box :Water_Cooler_C, id: :submitted_request_Water_Cooler_C %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Ice_Chest %>
+    <%= form.check_box :Ice_Chest, id: :submitted_request_Ice_Chest %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,107 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Submissions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone number</th>
+      <th>Event date</th>
+      <th>Event time</th>
+      <th>Event name</th>
+      <th>Event description</th>
+      <th>Pick up date</th>
+      <th>Drop off date</th>
+      <th>Popcorn machine</th>
+      <th>Snowkone machine</th>
+      <th>Chocolate fountain</th>
+      <th>Cotton candy machine</th>
+      <th>Margaritaville</th>
+      <th>Pancake griddle a</th>
+      <th>Pancake griddle b</th>
+      <th>Pancake griddle c</th>
+      <th>Epson projector</th>
+      <th>Projector screen</th>
+      <th>Fender speakers blutooth</th>
+      <th>Fender speakers wired</th>
+      <th>Microphone and stand</th>
+      <th>Cornhole</th>
+      <th>Kan jam</th>
+      <th>Bocce ball</th>
+      <th>Washer toss</th>
+      <th>White canopy a</th>
+      <th>White canopy b</th>
+      <th>White canopy c</th>
+      <th>Strobe lights</th>
+      <th>Red police light</th>
+      <th>Six light helicopter</th>
+      <th>Black light</th>
+      <th>Extention cord a</th>
+      <th>Extention cord b</th>
+      <th>Extention cord c</th>
+      <th>Water cooler a</th>
+      <th>Water cooler b</th>
+      <th>Water cooler c</th>
+      <th>Ice chest</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @submissions.each do |submission| %>
+      <tr>
+        <td><%= submission.First_Name %></td>
+        <td><%= submission.Last_Name %></td>
+        <td><%= submission.Email %></td>
+        <td><%= submission.Phone_Number %></td>
+        <td><%= submission.Event_Date %></td>
+        <td><%= submission.Event_Time %></td>
+        <td><%= submission.Event_Name %></td>
+        <td><%= submission.Event_Description %></td>
+        <td><%= submission.Pick_Up_Date %></td>
+        <td><%= submission.Drop_Off_Date %></td>
+        <td><%= submission.Popcorn_Machine %></td>
+        <td><%= submission.SnowKone_Machine %></td>
+        <td><%= submission.Chocolate_Fountain %></td>
+        <td><%= submission.Cotton_Candy_Machine %></td>
+        <td><%= submission.Margaritaville %></td>
+        <td><%= submission.Pancake_Griddle_A %></td>
+        <td><%= submission.Pancake_Griddle_B %></td>
+        <td><%= submission.Pancake_Griddle_C %></td>
+        <td><%= submission.Epson_Projector %></td>
+        <td><%= submission.Projector_Screen %></td>
+        <td><%= submission.Fender_Speakers_Blutooth %></td>
+        <td><%= submission.Fender_Speakers_Wired %></td>
+        <td><%= submission.microphone_and_Stand %></td>
+        <td><%= submission.Cornhole %></td>
+        <td><%= submission.Kan_Jam %></td>
+        <td><%= submission.Bocce_Ball %></td>
+        <td><%= submission.Washer_Toss %></td>
+        <td><%= submission.White_Canopy_A %></td>
+        <td><%= submission.White_Canopy_B %></td>
+        <td><%= submission.White_Canopy_C %></td>
+        <td><%= submission.Strobe_Lights %></td>
+        <td><%= submission.Red_Police_Light %></td>
+        <td><%= submission.Six_Light_Helicopter %></td>
+        <td><%= submission.Black_Light %></td>
+        <td><%= submission.Extention_Cord_A %></td>
+        <td><%= submission.Extention_Cord_B %></td>
+        <td><%= submission.Extention_cord_C %></td>
+        <td><%= submission.Water_Cooler_A %></td>
+        <td><%= submission.Water_Cooler_B %></td>
+        <td><%= submission.Water_Cooler_C %></td>
+        <td><%= submission.Ice_Chest %></td>
+        <td><%= link_to 'Show', submission %></td>
+        <td><%= link_to 'Edit', edit_submission_path(submission) %></td>
+        <td><%= link_to 'Destroy', submission, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Submission', new_submission_path %>

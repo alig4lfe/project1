@@ -1,0 +1,87 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  First_Name: MyString
+  Last_Name: MyString
+  Email: MyString
+  Phone_Number: MyString
+  Event_Date: 2017-12-27
+  Event_Time: 2017-12-27 15:19:19
+  Event_Name: MyString
+  Event_Description: MyText
+  Pick_Up_Date: 2017-12-27
+  Drop_Off_Date: 2017-12-27
+  Popcorn_Machine: false
+  SnowKone_Machine: false
+  Chocolate_Fountain: false
+  Cotton_Candy_Machine: false
+  Margaritaville: false
+  Pancake_Griddle_A: false
+  Pancake_Griddle_B: false
+  Pancake_Griddle_C: false
+  Epson_Projector: false
+  Projector_Screen: false
+  Fender_Speakers_Blutooth: false
+  Fender_Speakers_Wired: false
+  microphone_and_Stand: false
+  Cornhole: false
+  Kan_Jam: false
+  Bocce_Ball: false
+  Washer_Toss: false
+  White_Canopy_A: false
+  White_Canopy_B: false
+  White_Canopy_C: false
+  Strobe_Lights: false
+  Red_Police_Light: false
+  Six_Light_Helicopter: false
+  Black_Light: false
+  Extention_Cord_A: false
+  Extention_Cord_B: false
+  Extention_cord_C: false
+  Water_Cooler_A: false
+  Water_Cooler_B: false
+  Water_Cooler_C: false
+  Ice_Chest: false
+
+two:
+  First_Name: MyString
+  Last_Name: MyString
+  Email: MyString
+  Phone_Number: MyString
+  Event_Date: 2017-12-27
+  Event_Time: 2017-12-27 15:19:19
+  Event_Name: MyString
+  Event_Description: MyText
+  Pick_Up_Date: 2017-12-27
+  Drop_Off_Date: 2017-12-27
+  Popcorn_Machine: false
+  SnowKone_Machine: false
+  Chocolate_Fountain: false
+  Cotton_Candy_Machine: false
+  Margaritaville: false
+  Pancake_Griddle_A: false
+  Pancake_Griddle_B: false
+  Pancake_Griddle_C: false
+  Epson_Projector: false
+  Projector_Screen: false
+  Fender_Speakers_Blutooth: false
+  Fender_Speakers_Wired: false
+  microphone_and_Stand: false
+  Cornhole: false
+  Kan_Jam: false
+  Bocce_Ball: false
+  Washer_Toss: false
+  White_Canopy_A: false
+  White_Canopy_B: false
+  White_Canopy_C: false
+  Strobe_Lights: false
+  Red_Police_Light: false
+  Six_Light_Helicopter: false
+  Black_Light: false
+  Extention_Cord_A: false
+  Extention_Cord_B: false
+  Extention_cord_C: false
+  Water_Cooler_A: false
+  Water_Cooler_B: false
+  Water_Cooler_C: false
+  Ice_Chest: false

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IRHASystem</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <header>
+  	<%= "__________________________________"%>
+  	<img src = "/Copy of IRHA Logo-Transparent.png"style="width:256px;height:128px;">
+  	<%= "__________________________________"%>
+  </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
