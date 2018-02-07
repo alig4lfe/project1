@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem  'execjs'
+gem 'therubyracer', :platforms => :ruby
 gem 'figaro'
 gem 'puma'
 
