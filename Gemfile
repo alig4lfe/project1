@@ -34,8 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem  'execjs'
 gem 'therubyracer', :platforms => :ruby
-#gem 'figaro'
-#gem 'puma'
+gem 'figaro'
+gem 'puma'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,11 +49,11 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  #gem 'capistrano'
-  #gem 'capistrano3-puma'
-  #gem 'capistrano-rails', require: false
-  #gem 'capistrano-bundler', require: false
-  #gem 'capistrano-rvm'
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
